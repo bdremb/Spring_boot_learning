@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/bookshop")
+@RequestMapping("/")
 public class MainPageController {
 
     private final BookService bookService;
@@ -27,6 +27,12 @@ public class MainPageController {
     @GetMapping("/genres")
     public String genresPage(Model model){
         model.addAttribute("bookData", bookService.getBooksData());
-        return "genres";
+        return "redirect:/genres/index";
+    }
+
+    @GetMapping("/authors")
+    public String authorsPage(Model model){
+        model.addAttribute("bookData", bookService.getBooksData());
+        return "redirect:/authors/index";
     }
 }
