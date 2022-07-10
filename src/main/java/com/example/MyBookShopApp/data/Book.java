@@ -3,6 +3,7 @@ package com.example.MyBookShopApp.data;
 public class Book {
 
     private Integer id;
+    private Integer bookId;
     private String author;
     private String title;
     private Double priceOld;
@@ -33,6 +34,14 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public Integer getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(Integer bookId) {
+        this.bookId = bookId;
     }
 
     public String getTitle() {

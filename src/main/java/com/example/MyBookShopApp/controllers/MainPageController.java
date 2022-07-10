@@ -25,14 +25,14 @@ public class MainPageController {
     }
 
     @GetMapping("/genres")
-    public String genresPage(Model model){
-        model.addAttribute("bookData", bookService.getBooksData());
+    public String genresPage(){
         return "redirect:/genres/index";
     }
 
     @GetMapping("/authors")
     public String authorsPage(Model model){
-        model.addAttribute("bookData", bookService.getBooksData());
-        return "redirect:/authors/index";
+        model.addAttribute("authorData", bookService.getAuthorsData());
+        return "index";
     }
+
 }
