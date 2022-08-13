@@ -20,7 +20,7 @@ public class BookService {
 
     public List<Book> getBooksData() {
 
-        List<Book> books = jdbcTemplate.query("SELECT b.id, b.bookId, b.title, b.priceOld, b.price, a.author  FROM books b " +
+        List<Book> books = jdbcTemplate.query("SELECT b.id, b.bookId, b.title, b.priceOld, b.price, a.author as author  FROM books b " +
                 "LEFT JOIN authors a ON a.bookId = b.bookId", (ResultSet rs, int rownum) -> {
             Book book = new Book();
             book.setId(rs.getInt("id"));
@@ -28,12 +28,13 @@ public class BookService {
             book.setTitle(rs.getString("title"));
             book.setPriceOld(rs.getDouble("priceOld"));
             book.setPrice(rs.getDouble("price"));
+            book.setAuthor(rs.getString("author"));
             return book;
         });
         return new ArrayList<>(books);
     }
 
-    public Object getAuthorsData() {
+    public List<Author> getAuthorsData() {
         List<Author> authors = jdbcTemplate.query("SELECT * FROM authors", (ResultSet rs, int rownum) -> {
             Author author = new Author();
             author.setId(rs.getInt("id"));
