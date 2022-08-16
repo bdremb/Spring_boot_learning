@@ -26,7 +26,7 @@ public class MainPageController {
 
     @GetMapping("/genres")
     public String genresPage(){
-        return "redirect:/genres/index";
+        return "genres/index";
     }
 
     @GetMapping("/authors")
