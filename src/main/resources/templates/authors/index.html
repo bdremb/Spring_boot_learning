@@ -139,42 +139,83 @@ p.error-browser
             </h1>
             <div class="Section">
                 <div class="Authors">
-                    <div class="Authors-links"><a class="Authors-link" href="#a">А</a>
-                        <a class="Authors-link" href="#b">Б</a><a
-                                class="Authors-link" href="#v">В</a><a class="Authors-link" href="#g">Г</a><a
-                                class="Authors-link" href="#d">Д</a><a class="Authors-link" href="#e">Е</a><a
-                                class="Authors-link" href="#e">Ё</a><a class="Authors-link" href="#ge">Ж</a><a
-                                class="Authors-link" href="#z">З</a><a class="Authors-link" href="#i">И</a><a
-                                class="Authors-link" href="#ik">Й</a><a class="Authors-link" href="#k">К</a><a
-                                class="Authors-link" href="#l">Л</a><a class="Authors-link" href="#m">М</a><a
-                                class="Authors-link" href="#n">Н</a><a class="Authors-link" href="#o">О</a><a
-                                class="Authors-link" href="#p">П</a><a class="Authors-link" href="#r">Р</a><a
-                                class="Authors-link" href="#s">С</a><a class="Authors-link" href="#t">Т</a><a
-                                class="Authors-link" href="#u">У</a><a class="Authors-link" href="#f">Ф</a><a
-                                class="Authors-link" href="#h">Х</a><a class="Authors-link" href="#c">Ц</a><a
-                                class="Authors-link" href="#ch">Ч</a><a class="Authors-link" href="#sh">Ш</a><a
-                                class="Authors-link" href="#shh">Щ</a><a class="Authors-link" href="#ye">Э</a><a
-                                class="Authors-link" href="#yu">Ю</a><a class="Authors-link" href="#ya">Я</a>
+                    <div class="Authors-links"><a class="Authors-link" href="#a">A</a>
+                        <a class="Authors-link" href="#b">B</a><a
+                                class="Authors-link" href="#c">C</a><a
+                                class="Authors-link" href="#d">D</a><a
+                                class="Authors-link" href="#e">E</a><a
+                                class="Authors-link" href="#f">F</a><a
+                                class="Authors-link" href="#g">G</a><a
+                                class="Authors-link" href="#h">H</a>
                     </div>
                     <div class="Authors-block">
-                        <h2 class="Authors-title" id="a">А
-                        </h2>
+
+                        <h2 class="Authors-title" id="a">А</h2>
                         <div class="Slider-item" th:each="auth : ${authorData}">
-                            <div class="Authors-letter">
+                            <span th:if="${auth.author.substring(0,1) == 'A'}">
                                 <div class="Author-item">
                                     <a href="/authors/slug.html" th:text="${auth.author}"></a>
                                 </div>
-                                <!--                  <div class="Authors-item"><a href="/authors/slug.html">Абгарян Наринэ</a>-->
-                                <!--                  </div>-->
-                                <!--                  <div class="Authors-item"><a href="/authors/slug.html">Абдуллаев Чингиз</a>-->
-                                <!--                  </div>-->
-                                <!--                  <div class="Authors-item"><a href="/authors/slug.html">Аберкромби Джо</a>-->
-                                <!--                  </div>-->
-                                <!--                  <div class="Authors-item"><a href="/authors/slug.html">Авдич Оса</a>-->
-                                <!--                  </div>-->
-                            </div>
+                            </span>
                         </div>
+
+                        <h2 class="Authors-title" id="b">B</h2>
+                        <div class="Slider-item" th:each="auth : ${authorData}">
+                            <span th:if="${auth.author.substring(0,1) == 'B'}">
+                                <div class="Author-item">
+                                    <a href="/authors/slug.html" th:text="${auth.author}"></a>
+                                </div>
+                            </span>
+                        </div>
+
+                        <h2 class="Authors-title" id="c">C</h2>
+                        <div class="Slider-item" th:each="auth : ${authorData}">
+                            <span th:if="${auth.author.substring(0,1) == 'C'}">
+                                <div class="Author-item">
+                                    <a href="/authors/slug.html" th:text="${auth.author}"></a>
+                                </div>
+                            </span>
+                        </div>
+
+                        <h2 class="Authors-title" id="d">D</h2>
+                        <div class="Slider-item" th:each="auth : ${authorData}">
+                            <span th:if="${auth.author.substring(0,1) == 'D'}">
+                                <div class="Author-item">
+                                    <a href="/authors/slug.html" th:text="${auth.author}"></a>
+                                </div>
+                            </span>
+                        </div>
+
+                        <h2 class="Authors-title" id="e">E</h2>
+                        <div class="Slider-item" th:each="auth : ${authorData}">
+                            <span th:if="${auth.author.substring(0,1) == 'E'}">
+                                <div class="Author-item">
+                                    <a href="/authors/slug.html" th:text="${auth.author}"></a>
+                                </div>
+                            </span>
+                        </div>
+
+                        <h2 class="Authors-title" id="f">F</h2>
+                        <div class="Slider-item" th:each="auth : ${authorData}">
+                            <span th:if="${auth.author.substring(0,1) == 'F'}">
+                                <div class="Author-item">
+                                    <a href="/authors/slug.html" th:text="${auth.author}"></a>
+                                </div>
+                            </span>
+                        </div>
+
+                        <h2 class="Authors-title" id="g">G</h2>
+                        <div class="Slider-item" th:each="auth : ${authorData}">
+                            <span th:if="${auth.author.substring(0,1) == 'G'}">
+                                <div class="Author-item">
+                                    <a href="/authors/slug.html" th:text="${auth.author}"></a>
+                                </div>
+                            </span>
+                        </div>
+
                     </div>
+
+                    <br/><br/>
                     <footer class="Footer">
                         <div class="wrap">
                             <div class="row Footer-main">
@@ -252,14 +293,14 @@ p.error-browser
                                     <ul class="menu menu_vt Footer-menu">
                                         <li class="menu-item"><a class="menu-link" href="/main">Главная</a>
                                         </li>
-                                        <li class="menu-item"><a class="menu-link" href="/genres/index.html">Жанры</a>
+                                        <li class="menu-item"><a class="menu-link" href="/genres">Жанры</a>
                                         </li>
                                         <li class="menu-item"><a class="menu-link" href="/books/recent.html">Новинки</a>
                                         </li>
                                         <li class="menu-item"><a class="menu-link"
                                                                  href="/books/popular.html">Популярное</a>
                                         </li>
-                                        <li class="menu-item"><a class="menu-link" href="/authors/index.html">Авторы</a>
+                                        <li class="menu-item"><a class="menu-link" href="/authors">Авторы</a>
                                         </li>
                                     </ul>
                                 </div>

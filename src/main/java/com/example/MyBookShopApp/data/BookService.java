@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -41,6 +42,9 @@ public class BookService {
             author.setAuthor(rs.getString("author"));
             return author;
         });
-        return new ArrayList<>(authors);
+        List<Author> result = new ArrayList<>(authors);
+        result.sort(Comparator.comparing(Author::getAuthor));
+        return result;
     }
+
 }
