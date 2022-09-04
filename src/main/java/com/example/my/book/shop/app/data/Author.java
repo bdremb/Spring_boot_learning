@@ -1,4 +1,4 @@
-package com.example.MyBookShopApp.data;
+package com.example.my.book.shop.app.data;
 
 public class Author {
 

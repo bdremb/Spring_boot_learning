@@ -3,7 +3,7 @@ insert into books (bookId, title, priceOld, price) values (2, 'utilize real-time
 insert into books (bookId, title, priceOld, price) values (3, 'extend strategic e-services', '272.00', '151.04');
 insert into books (bookId, title, priceOld, price) values (4, 'iterate integrated solutions', '271.58', '141.40');
 insert into books (bookId, title, priceOld, price) values (5, 'cultivate magnetic e-commerce', '278.43', '54.44');
-insert into books (bookId, title, priceOld, price) values (5, 'architect vertical ROI', '282.54', '102.61');
+insert into books (bookId, title, priceOld, price) values (25, 'architect vertical ROI', '282.54', '102.61');
 insert into books (bookId, title, priceOld, price) values (6, 'disintermediate extensible architectures', '295.38', '181.27');
 insert into books (bookId, title, priceOld, price) values (7, 'extend leading-edge methodologies', '283.08', '97.96');
 insert into books (bookId, title, priceOld, price) values (8, 'integrate one-to-one systems', '258.51', '52.25');
@@ -30,7 +30,7 @@ insert into authors (author, bookId) values ('Marcia Aggiss',       2);
 insert into authors (author, bookId) values ('Giovanni Bigg',       3);
 insert into authors (author, bookId) values ('Duffie Eynon',        4);
 insert into authors (author, bookId) values ('Anselma McKennan',    5);
-insert into authors (author, bookId) values ('Gert Kira',           5);
+insert into authors (author, bookId) values ('Gert Kira',           25);
 insert into authors (author, bookId) values ('Clerc Djakovic',      6);
 insert into authors (author, bookId) values ('Stacee Elsy',         7);
 insert into authors (author, bookId) values ('Dorotea Bonhill',     8);
