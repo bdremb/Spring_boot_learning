@@ -37,17 +37,17 @@ public class PageController {
         return "authors/slug";
     }
 
-    @GetMapping("/bookshops/books/author")
+    @GetMapping("/books/author")
     public String bookshopAuthor(Model model) {
         return "books/author";
     }
 
-    @GetMapping("/bookshops/books/popular")
+    @GetMapping("/books/popular")
     public String bookshopBooksPopular(Model model) {
         return "books/popular";
     }
 
-    @GetMapping("/bookshops/books/recent")
+    @GetMapping("/books/recent")
     public String bookshopBooksRecent(Model model) {
         return "books/recent";
     }
